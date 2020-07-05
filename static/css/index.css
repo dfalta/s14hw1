@@ -1,0 +1,35 @@
+h1 {
+    color: rgba(0, 0, 64, 1);
+}
+
+.centered {
+	text-align:center;
+}
+
+.price {
+	font-size: 2em;
+	font-weight: bold;
+	color: #85bb65;
+}
+
+#instructions {
+	font-weight: bold;
+}
+
+
+.animate {
+  animation: priceAnimation 2s linear infinite;
+}
+
+@keyframes priceAnimation {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+
