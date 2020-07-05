@@ -65,6 +65,14 @@
       <p id="instructions">Fill out the form below and press the PREDICT button for a new prediction.</p>
     </div>
     <div class="form-group">
+      <label for="inpt_model">Model:</label>
+      <select class="custom-select" id="inpt_model" name="inpt_model"> 
+        {% for key, value in model_names.items() %} 
+          <option value="{{ key }}">{{ value }}</option> 
+        {% endfor %}
+      </select>
+    </div>
+    <div class="form-group">
       <label for="inpt_beds">Number of Bedrooms:</label>
       <input type="number" class="form-control" id="inpt_beds" name="inpt_beds" min="0" step="any" value="{{ X[0] }}" >
     </div>

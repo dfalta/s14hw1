@@ -7,7 +7,8 @@ $(function() {
     $.ajax({
            type: "POST",
            url: "/_predict",
-           data: {inpt_beds: $("#inpt_beds").val(),
+           data: {inpt_model: $("#inpt_model").val(),
+                  inpt_beds: $("#inpt_beds").val(),
 				  inpt_baths: $("#inpt_baths").val(),
 				  inpt_sqft: $("#inpt_sqft").val(),
 				  inpt_age: $("#inpt_age").val(),
